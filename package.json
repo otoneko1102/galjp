@@ -1,0 +1,35 @@
+{
+  "name": "galjp",
+  "version": "1.0.0",
+  "description": "‡”兯儿文字変換ラィ┐”ラױ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otoneko1102/galjp.git"
+  },
+  "keywords": [
+    "japan",
+    "jp",
+    "gal",
+    "moji",
+    "converter",
+    "convert",
+    "generate",
+    "generator",
+    "joke",
+    "fun",
+    "kana",
+    "hiragana",
+    "katakana",
+    "kanji"
+  ],
+  "author": "otoneko.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otoneko1102/galjp/issues"
+  },
+  "homepage": "https://github.com/otoneko1102/galjp#readme"
+}
