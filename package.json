@@ -1,6 +1,6 @@
 {
   "name": "galjp",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "≠”兯儿文字変ｵ奐ラィ┐”ラױ",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "jp",
     "gal",
     "moji",
+    "galmoji",
     "converter",
     "convert",
     "generate",
