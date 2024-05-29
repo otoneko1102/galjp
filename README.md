@@ -5,7 +5,12 @@
 ```js
 const { generate } = require('galjp');
 
-console.log(generate('こんにちは！')) // '⊇ωﾚﾆㄘﾚ￡.ᐟ'
+console.log(generate('Hello World!')); // '丩ヨ└└口 山口尺└囙.ᐟ'
+console.log(generate('Hello World!', { alphabet: false })); // 'Hello World.ᐟ'
+console.log(generate('こんにちは！')); // '⊇ωﾚﾆㄘﾚ￡.ᐟ'
+console.log(generate('こんにちは！', { hira: false })); // 'こんにちは.ᐟ'
+console.log(generate('信頼してる')); // 'ｲ言束頁Ｕτゑ'
+console.log(generate('信頼してる', { kanji: false })); // '信頼Ｕτゑ'
 ```
 
 ## Get Support
