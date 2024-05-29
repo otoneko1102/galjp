@@ -1,3 +1,16 @@
+/*
+ * Generation - galmoji
+ * @param input string (required)
+ * @param option object
+ * @param option.alphabet boolean (default=true)
+ * @param option.hira boolean (default=true)
+ * @param option.kata boolean (default=true)
+ * @param option.kanji boolean (default=true)
+ * @param option.other boolean (default=true)
+ * @param option.word boolean (default=true)
+ * @returns - Generated string.
+ */
+
 function generate(input, option) {
   if (!input || typeof input !== 'string') throw new Error('input must be string.');
 
