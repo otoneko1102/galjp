@@ -3,6 +3,7 @@
  * @param input string (required)
  * @param option object
  * @param option.alphabet boolean (default=true)
+ * @param option.number boolean (default=true)
  * @param option.hira boolean (default=true)
  * @param option.kata boolean (default=true)
  * @param option.kanji boolean (default=true)
@@ -16,6 +17,7 @@ function generate(input, option) {
 
   const booleans = {
     alphabet: true,
+    number: true,
     hira: true,
     kata: true,
     kanji: true,
@@ -26,6 +28,7 @@ function generate(input, option) {
   if (option) {
     if (typeof option !== 'object') throw new Error('option must be object.');
     if (option.alphabet !== undefined && typeof option.alphabet !== 'boolean') throw new Error('option.alphabet must be boolean.');
+    if (option.number !== undefined && typeof option.number !== 'boolean') throw new Error('option.number must be boolean.');
     if (option.hira !== undefined && typeof option.hira !== 'boolean') throw new Error('option.hira must be boolean.');
     if (option.kata !== undefined && typeof option.kata !== 'boolean') throw new Error('option.kata must be boolean.');
     if (option.kanji !== undefined && typeof option.kanji !== 'boolean') throw new Error('option.kanji must be boolean.');
@@ -39,6 +42,7 @@ function generate(input, option) {
 
   const w = require('../lib/word.json');
   const alphabet = require('../lib/chars/alphabet.json');
+  const number = require('../lib/chars/number.json');
   const hira = require('../lib/chars/hiragana.json');
   const kata = require('../lib/chars/katakana.json');
   const kanji = require('../lib/chars/kanji.json');
@@ -54,6 +58,7 @@ function generate(input, option) {
   for (const char of text.split('')) {
     let c = char;
     if (booleans.alphabet && alphabet[c.toUpperCase()]) c = alphabet[c.toUpperCase()];
+    if (booleans.number && number[c]) c = number[c];
     if (booleans.hira && hira[c]) c = hira[c];
     if (booleans.kata && kata[c]) c = kata[c];
     if (booleans.kanji && kanji[c]) c = kanji[c];
