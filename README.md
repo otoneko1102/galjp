@@ -5,7 +5,7 @@
 ```js
 const { generate } = require('galjp');
 
-/*
+/**
  * Generation - galmoji
  * @param input string (required)
  * @param option object

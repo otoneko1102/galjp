@@ -1,4 +1,4 @@
-/*
+/**
  * Generation - galmoji
  * @param input string (required)
  * @param option object
